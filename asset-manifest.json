@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Expense-Manager/static/css/main.c6fb8113.chunk.css",
+    "main.js": "/Expense-Manager/static/js/main.51c928a5.chunk.js",
+    "main.js.map": "/Expense-Manager/static/js/main.51c928a5.chunk.js.map",
+    "runtime~main.js": "/Expense-Manager/static/js/runtime~main.edddf5bf.js",
+    "runtime~main.js.map": "/Expense-Manager/static/js/runtime~main.edddf5bf.js.map",
+    "static/css/2.2980e819.chunk.css": "/Expense-Manager/static/css/2.2980e819.chunk.css",
+    "static/js/2.8bb45ca7.chunk.js": "/Expense-Manager/static/js/2.8bb45ca7.chunk.js",
+    "static/js/2.8bb45ca7.chunk.js.map": "/Expense-Manager/static/js/2.8bb45ca7.chunk.js.map",
+    "index.html": "/Expense-Manager/index.html",
+    "precache-manifest.ac00dcea6b8f649f1e015e4f3ca70abc.js": "/Expense-Manager/precache-manifest.ac00dcea6b8f649f1e015e4f3ca70abc.js",
+    "service-worker.js": "/Expense-Manager/service-worker.js",
+    "static/css/2.2980e819.chunk.css.map": "/Expense-Manager/static/css/2.2980e819.chunk.css.map",
+    "static/css/main.c6fb8113.chunk.css.map": "/Expense-Manager/static/css/main.c6fb8113.chunk.css.map",
+    "static/media/font-awesome.min.css": "/Expense-Manager/static/media/fontawesome-webfont.fee66e71.woff"
+  }
+}
