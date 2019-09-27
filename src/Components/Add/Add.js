@@ -1,5 +1,5 @@
 import React from 'react';
-import './Add.css';
+import './Add.scss';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
 import {withRouter} from 'react-router-dom';
@@ -34,12 +34,11 @@ class Add extends React.Component {
   }
 
   showSuccess = () => {
-    // console.log(this.state)
-    // this.setState({
-    //   showStatusMsg:true
-    // });
-    // this.hideSuccess();
-    this.props.history.push('/report');
+    console.log(this.state)
+    this.setState({
+      showStatusMsg:true
+    });
+    this.hideSuccess();
   }
 
   hideSuccess = () => {
@@ -50,9 +49,7 @@ class Add extends React.Component {
       this.props.history.push('/report');
     }, 2500);
   } 
-
-
-
+  
   submitForm = (event) => {
     const { expenseName, expenseAmt, expenseDate } = this.state;
     if(this.props.editItem) {

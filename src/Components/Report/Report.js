@@ -1,5 +1,5 @@
 import React from 'react';
-import './Report.css';
+import './Report.scss';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
 import { withRouter } from 'react-router-dom';
@@ -16,7 +16,12 @@ class Report extends React.Component {
 
   delete = (deleteItem) => {
     this.props.deleteExpense(deleteItem);
-    this.props.history.push('/report'); 
+    if(this.props.data.length>1) {
+      this.props.history.push('/report'); 
+    } else {
+      this.props.history.push('/add');
+    }
+    
   }
 
   edit = (editItem) => {

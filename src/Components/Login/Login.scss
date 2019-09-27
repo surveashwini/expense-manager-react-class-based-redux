@@ -1,0 +1,54 @@
+.login {
+    width: 50vw;
+    height: 50vh;
+    background: white;
+    border-radius: 50px;
+
+    .login-header {
+        color: black;
+        font-weight: bold;
+        font-size: 25px; 
+        border-radius: 25px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: calc(5px + 2vmin);
+        display: inline-block;
+        width: 50%;
+        padding-top: 10px;
+    }
+
+    .login-form {
+        display: flex;   
+        flex-direction:column; 
+        align-items: center;
+        justify-content: space-between;
+        height:150px;   
+
+        .user-name, .password {
+            width: 300px;
+            border-radius: 25px;
+            border: 2px solid darkgray;
+            margin-bottom: 8px;
+            height: 50px;
+            margin-bottom: 15px;
+    
+            &:focus {
+                outline: none;
+            }
+        }
+    
+        .login-submit {
+            width: 100px;
+            height: 60px;
+            font-size: 15px;
+            color: white;
+            background-color: yellowgreen;
+            border-radius: 25px;
+        }
+    }
+}
+
+
+
+
