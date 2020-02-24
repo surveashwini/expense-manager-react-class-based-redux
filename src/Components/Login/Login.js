@@ -65,7 +65,7 @@ class Login extends React.Component {
           </header>
           <form className="login-form" onSubmit={this.validateCredentials}>
             <input className="user-name" placeholder="Enter user name" value={this.state.userName} onChange={this.handleChange} type="text"  />
-            <input type="password" className="password" placeholder="Enter password" value={this.state.password} onChange={this.handleChange} type="text"  />     
+            <input type="password" className="password" placeholder="Enter password" value={this.state.password} onChange={this.handleChange} />     
             <input className="login-submit" type="submit" value="Submit" />
           </form>
         </section>
