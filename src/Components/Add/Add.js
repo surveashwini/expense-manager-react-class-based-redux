@@ -58,7 +58,7 @@ class Add extends React.Component {
     const { expenseName, expenseAmt, expenseDate } = this.state;
     if (this.props.editItem) {
       this.props.editExpense({
-        expenseId: this.props.editItem.expenseId,
+        expenseId: Number(this.props.editItem.expenseId),
         expenseName,
         expenseAmt,
         expenseDate,
