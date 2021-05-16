@@ -5,7 +5,7 @@ https://surve5.github.io/Expense-Manager/
 ## login details
 
 username - test123  
-password - test123
+password - #password123
 
 ## Note :
 

@@ -21,7 +21,7 @@ class Login extends React.Component {
   validateCredentials = (event) => {
     if (
       this.state.username === "test123" &&
-      this.state.password === "test123"
+      this.state.password === "#password123"
     ) {
       console.log("login", this.state);
       // this.setState({
