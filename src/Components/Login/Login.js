@@ -1,17 +1,16 @@
-import React from 'react';
-import './Login.scss';
-import {connect} from 'react-redux';
-import {compose} from 'redux';
-import {withRouter} from 'react-router-dom';
-import { authorizeUser } from '../../Actions/authorizeUser';
+import React from "react";
+import "./Login.scss";
+import { connect } from "react-redux";
+import { compose } from "redux";
+import { withRouter } from "react-router-dom";
+import { authorizeUser } from "../../Actions/authorizeUser";
 
 class Login extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: ''
+      username: "",
+      password: "",
     };
   }
 
@@ -20,52 +19,63 @@ class Login extends React.Component {
   // }
 
   validateCredentials = (event) => {
-    if(this.state.username == 'ashwini' && this.state.password == 'ashwini') {
-      console.log('login',this.state);
+    if (
+      this.state.username === "test123" &&
+      this.state.password === "test123"
+    ) {
+      console.log("login", this.state);
       // this.setState({
       //   isAuthenticated: true
       // }
-      
+
       // ,()=>{
       //   console.log('login',this.state);
       //   this.props.history.push('/add');
       //   //event.preventDefault();
       // });
       this.props.authorizeUser(true);
-      this.props.history.push('/add');
+      this.props.history.push("/add");
       event.preventDefault();
-      
     }
-  }
+  };
 
   handleChange = (event) => {
-    switch(event.target.className) {
-      case 'user-name':
-          this.setState({
-            username: event.target.value
-          });
-          break;
-      case 'password':
-          this.setState({
-            password: event.target.value
-          });
-          break;
+    switch (event.target.className) {
+      case "user-name":
+        this.setState({
+          username: event.target.value,
+        });
+        break;
+      case "password":
+        this.setState({
+          password: event.target.value,
+        });
+        break;
       default:
-          break;
+        break;
     }
-  }
-  
+  };
+
   render() {
-    
     return (
       <React.Fragment>
         <section className="login">
-          <header className="login-header">
-            Login
-          </header>
+          <header className="login-header">Login</header>
           <form className="login-form" onSubmit={this.validateCredentials}>
-            <input className="user-name" placeholder="Enter user name" value={this.state.userName} onChange={this.handleChange} type="text"  />
-            <input className="password" placeholder="Enter password" value={this.state.password} onChange={this.handleChange} type="password" />     
+            <input
+              className="user-name"
+              placeholder="Enter user name"
+              value={this.state.userName}
+              onChange={this.handleChange}
+              type="text"
+            />
+            <input
+              className="password"
+              placeholder="Enter password"
+              value={this.state.password}
+              onChange={this.handleChange}
+              type="password"
+            />
             <input className="login-submit" type="submit" value="Submit" />
           </form>
         </section>
@@ -74,9 +84,8 @@ class Login extends React.Component {
   }
 }
 
-
 const mapDispatchToProps = {
-  authorizeUser
-}
+  authorizeUser,
+};
 
-export default compose(withRouter, connect(null,mapDispatchToProps))(Login);
+export default compose(withRouter, connect(null, mapDispatchToProps))(Login);

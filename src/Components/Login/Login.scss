@@ -1,54 +1,52 @@
 .login {
-    width: 50vw;
-    height: 50vh;
-    background: white;
-    border-radius: 50px;
+  background: white;
 
-    .login-header {
-        color: black;
-        font-weight: bold;
-        font-size: 25px; 
-        border-radius: 25px;
-        height: 50px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        font-size: calc(5px + 2vmin);
-        display: inline-block;
-        width: 50%;
-        padding-top: 10px;
+  .login-header {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: calc(5px + 2vmin);
+    display: inline-block;
+    width: 50%;
+    padding-top: 10px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+
+    .user-name,
+    .password {
+      width: 100%;
+      height: 40px;
+      margin: 5px;
+      padding: 3px 7px;
+      font-size: 17px;
+
+      &:focus {
+        outline: none;
+      }
     }
 
-    .login-form {
-        display: flex;   
-        flex-direction:column; 
-        align-items: center;
-        justify-content: space-between;
-        height:150px;   
-
-        .user-name, .password {
-            width: 300px;
-            border-radius: 25px;
-            border: 2px solid darkgray;
-            margin-bottom: 8px;
-            height: 50px;
-            margin-bottom: 15px;
-    
-            &:focus {
-                outline: none;
-            }
-        }
-    
-        .login-submit {
-            width: 100px;
-            height: 60px;
-            font-size: 15px;
-            color: white;
-            background-color: yellowgreen;
-            border-radius: 25px;
-        }
+    .login-submit {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: inherit;
     }
+  }
 }
-
-
-
-

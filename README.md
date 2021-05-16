@@ -2,11 +2,11 @@
 
 https://surve5.github.io/Expense-Manager/
 
-## login details 
+## login details
 
-username - ashwini  
-password - ashwini
+username - test123  
+password - test123
 
-## Note : 
+## Note :
 
 Still a lot of work can be done, the work is in progress. Although, entire react-redux implementation is done.
